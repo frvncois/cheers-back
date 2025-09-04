@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_shared_sl_products",
+  "info": {
+    "displayName": "SL Product"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Type": {
+      "type": "string"
+    },
+    "Size": {
+      "type": "string"
+    },
+    "THC": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

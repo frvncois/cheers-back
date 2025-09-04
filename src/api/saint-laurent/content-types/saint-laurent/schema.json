@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "saint_laurents",
+  "info": {
+    "singularName": "saint-laurent",
+    "pluralName": "saint-laurents",
+    "displayName": "Saint-Laurent"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Intro": {
+      "type": "text"
+    },
+    "About": {
+      "type": "text"
+    },
+    "Mission": {
+      "type": "text"
+    },
+    "Product": {
+      "type": "component",
+      "component": "shared.sl-product",
+      "repeatable": true
+    }
+  }
+}

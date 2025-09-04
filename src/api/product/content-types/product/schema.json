@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Indica",
+        "Sativa",
+        "Mélange"
+      ]
+    },
+    "Format": {
+      "type": "string"
+    },
+    "Aroma": {
+      "type": "json"
+    },
+    "Terpenes": {
+      "type": "string"
+    },
+    "Parent": {
+      "type": "string"
+    },
+    "THCmin": {
+      "type": "string"
+    },
+    "THCmax": {
+      "type": "string"
+    },
+    "CBDmin": {
+      "type": "string"
+    },
+    "CBDmax": {
+      "type": "string"
+    },
+    "Availability": {
+      "type": "enumeration",
+      "enum": [
+        "SQDC",
+        "OCS",
+        "International"
+      ]
+    },
+    "Link": {
+      "type": "string"
+    }
+  }
+}
