@@ -53,6 +53,14 @@
         "audios"
       ]
     },
+    "Description": {
+      "type": "blocks",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
     "Category": {
       "type": "enumeration",
       "pluginOptions": {
