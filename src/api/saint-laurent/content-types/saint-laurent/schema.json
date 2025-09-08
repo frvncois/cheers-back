@@ -56,6 +56,16 @@
       },
       "component": "shared.sl-product",
       "repeatable": true
+    },
+    "Seo": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.seo",
+      "repeatable": false
     }
   }
 }
