@@ -631,7 +631,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
         };
       }>;
     Availability: Schema.Attribute.Enumeration<
-      ['SQDC', 'OCS', 'International']
+      ['SQDC', 'OCS', 'Alberta', 'International']
     > &
       Schema.Attribute.SetPluginOptions<{
         i18n: {

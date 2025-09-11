@@ -148,6 +148,7 @@
       "enum": [
         "SQDC",
         "OCS",
+        "Alberta",
         "International"
       ]
     },
