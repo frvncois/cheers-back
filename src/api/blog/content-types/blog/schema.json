@@ -47,17 +47,12 @@
       }
     },
     "Video": {
-      "type": "media",
+      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      },
-      "multiple": false,
-      "allowedTypes": [
-        "files",
-        "videos"
-      ]
+      }
     },
     "Content": {
       "type": "blocks",
