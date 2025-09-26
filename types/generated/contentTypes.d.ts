@@ -510,6 +510,12 @@ export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    Video: Schema.Attribute.Media<'files' | 'videos'> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
   };
 }
 
@@ -632,6 +638,24 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       }>;
     Availability: Schema.Attribute.Enumeration<
       ['SQDC', 'OCS', 'Alberta', 'International']
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Banner01: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Banner02: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
     > &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
