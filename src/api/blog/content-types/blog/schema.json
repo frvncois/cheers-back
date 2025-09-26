@@ -54,6 +54,21 @@
         }
       }
     },
+    "Gallerie": {
+      "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
     "Content": {
       "type": "blocks",
       "pluginOptions": {
