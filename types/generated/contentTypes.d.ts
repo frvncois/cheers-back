@@ -640,9 +640,13 @@ export interface ApiProductListProductList extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    About_Content: Schema.Attribute.Text;
+    About_Cover: Schema.Attribute.Media<'files' | 'images'>;
+    About_Title: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    Intro: Schema.Attribute.Text;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -650,10 +654,6 @@ export interface ApiProductListProductList extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
-    Title: Schema.Attribute.String;
-    Title_About: Schema.Attribute.String;
-    Title_Content: Schema.Attribute.Text;
-    Title_Cover: Schema.Attribute.Media<'files' | 'images'>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

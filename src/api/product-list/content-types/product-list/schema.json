@@ -11,16 +11,16 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
-      "type": "string"
-    },
-    "Title_About": {
-      "type": "string"
-    },
-    "Title_Content": {
+    "Intro": {
       "type": "text"
     },
-    "Title_Cover": {
+    "About_Title": {
+      "type": "string"
+    },
+    "About_Content": {
+      "type": "text"
+    },
+    "About_Cover": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
