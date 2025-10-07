@@ -629,6 +629,37 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiProductListProductList extends Struct.SingleTypeSchema {
+  collectionName: 'product_lists';
+  info: {
+    displayName: 'ProductList';
+    pluralName: 'product-lists';
+    singularName: 'product-list';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::product-list.product-list'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    Title: Schema.Attribute.String;
+    Title_About: Schema.Attribute.String;
+    Title_Content: Schema.Attribute.Text;
+    Title_Cover: Schema.Attribute.Media<'files' | 'images'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiProductProduct extends Struct.CollectionTypeSchema {
   collectionName: 'products';
   info: {
@@ -794,6 +825,12 @@ export interface ApiSaintLaurentSaintLaurent extends Struct.SingleTypeSchema {
   };
   attributes: {
     About: Schema.Attribute.Text &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Cover: Schema.Attribute.Media<'images' | 'files'> &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1356,6 +1393,7 @@ declare module '@strapi/strapi' {
       'api::about.about': ApiAboutAbout;
       'api::blog.blog': ApiBlogBlog;
       'api::home.home': ApiHomeHome;
+      'api::product-list.product-list': ApiProductListProductList;
       'api::product.product': ApiProductProduct;
       'api::saint-laurent.saint-laurent': ApiSaintLaurentSaintLaurent;
       'plugin::content-releases.release': PluginContentReleasesRelease;

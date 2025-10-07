@@ -23,6 +23,19 @@
         }
       }
     },
+    "Cover": {
+      "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
     "Intro": {
       "type": "text",
       "pluginOptions": {

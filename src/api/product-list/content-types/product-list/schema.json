@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "product_lists",
+  "info": {
+    "singularName": "product-list",
+    "pluralName": "product-lists",
+    "displayName": "ProductList"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Title_About": {
+      "type": "string"
+    },
+    "Title_Content": {
+      "type": "text"
+    },
+    "Title_Cover": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "files",
+        "images"
+      ]
+    }
+  }
+}
