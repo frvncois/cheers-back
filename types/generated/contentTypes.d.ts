@@ -632,7 +632,7 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
 export interface ApiProductListProductList extends Struct.SingleTypeSchema {
   collectionName: 'product_lists';
   info: {
-    displayName: 'ProductList';
+    displayName: 'ProductsList';
     pluralName: 'product-lists';
     singularName: 'product-list';
   };

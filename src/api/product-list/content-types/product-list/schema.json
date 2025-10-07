@@ -4,7 +4,7 @@
   "info": {
     "singularName": "product-list",
     "pluralName": "product-lists",
-    "displayName": "ProductList"
+    "displayName": "ProductsList"
   },
   "options": {
     "draftAndPublish": true
