@@ -23,6 +23,14 @@
         }
       }
     },
+    "Order": {
+      "type": "integer",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
     "Thumbnail": {
       "type": "media",
       "pluginOptions": {

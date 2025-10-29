@@ -781,6 +781,12 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       'oneToMany',
       'api::product.product'
     >;
+    Order: Schema.Attribute.Integer &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     Parent: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
